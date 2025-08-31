@@ -4,7 +4,8 @@ import pandas as pd
 # URL del nuevo archivo CSV en GitHub
 # Reemplaza 'tu_usuario', 'nombre_del_repositorio' y 'ruta_al_nuevo_archivo.csv'
 # con los datos de tu repositorio
-url = 'https://raw.githubusercontent.com/consupalabrahoy-cloud/diccionariobiblico/refs/heads/main/Diccionario%20-%20Diccionario.csv'
+#url = 'https://raw.githubusercontent.com/consupalabrahoy-cloud/diccionariobiblico/refs/heads/main/Diccionario%20-%20Diccionario.csv'
+url = 'https://raw.githubusercontent.com/consupalabrahoy-cloud/diccionariobiblico/main/Diccionario%20-%20Diccionario.csv'
 
 @st.cache_data
 def load_data(url):
@@ -52,3 +53,4 @@ except Exception as e:
     st.error(f"Ocurrió un error al cargar los datos: {e}")
 
     st.info("Asegúrate de que la URL del archivo CSV en GitHub sea correcta y accesible.")
+
